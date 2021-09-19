@@ -1,5 +1,7 @@
 /** @format */
 
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
@@ -10,6 +12,8 @@
 body {
 	height: 100%;
 	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
 }
 
 a {
@@ -24,15 +28,16 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 	padding: 1.4rem 3rem;
 }
 
 .header-nav > div a img {
-	height: 70%;
+	max-width: 80%;
 }
 
 .header-nav > div a i {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	color: #000000;
 }
 
@@ -41,14 +46,276 @@ a:hover {
 }
 
 header .hero {
-	background: no-repeat center/cover url("../images/dmin.jpg");
-	background-position: right 50px;
-	height: 100vh;
-	position: relative;
+	background: no-repeat center/59.4rem url("../images/hero-bg.jpg");
+	background-position: 81.5% 0%;
+	min-height: 95vh;
+	display: flex;
+	justify-content: center;
 }
 
 .hero .hero-text {
+	/* z-index: 1; */
+	align-self: flex-end;
+	padding-bottom: 3rem;
+	color: #ffffff;
+	min-width: 20rem;
+}
+
+.hero-text div:first-child {
+	letter-spacing: 3px;
+	font-family: "Roboto", sans-serif;
+	font-size: 2.2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.hero-text div:nth-child(2) {
+	font-family: "Archivo Black", sans-serif;
+	font-size: 3.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: start;
+	vertical-align: baseline;
+}
+
+div.underline {
+	height: 0.6rem;
+	width: 100%;
+	margin-top: 1.8rem;
+}
+
+div.hero-text-underline {
+	background-color: #ffffff;
+}
+
+main > section.services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	row-gap: 2rem;
+	background-color: #f2f2f2;
+	padding: 4rem;
+}
+
+.services div > h3 {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #999999;
+	font-weight: 400;
+}
+
+.services div > h1 {
+	font-family: "Roboto", sans-serif;
+	font-size: 3.2rem;
+	line-height: 3.5rem;
+	font-weight: 700;
+	letter-spacing: normal;
+	text-transform: capitalize;
+	color: hsl(0, 0%, 7%);
+	min-width: 24rem;
+}
+
+.services div > p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	color: #111111;
+	font-weight: 300;
+}
+
+button.services-booking-action {
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	background-color: #d1161e;
+	border: none;
+	color: #ffffff;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 0.75rem;
+	line-height: 1.2rem;
+	vertical-align: middle;
+	letter-spacing: 1px;
+}
+
+.services-booking-action:hover {
+	background-color: #bd171f;
+}
+
+section.contact {
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section.contact > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 2rem;
+}
+
+section.contact > div > div.service-img {
+	background-size: 32rem;
+	background-position: 48% 50%;
+	height: 22rem;
+}
+
+.service-img.img-1 {
+	background-image: url("../images/billionphotos1882993.jpg");
+}
+
+.service-img.img-2 {
+	background-image: url("../images/billionphotos1883011.jpg");
+}
+
+.contact > div > p {
+	padding: 2rem 0;
+	color: #111111;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	line-height: 1.6rem;
+	font-weight: 400;
+	text-align: left;
+}
+
+.contact > div > .contact-text {
+	padding: 0 0.6rem;
+}
+
+.contact-text > h4 {
+	color: #111111;
+
+	font-family: "Roboto", sans-serif;
+	font-size: 1.9rem;
+	line-height: 2.1rem;
+	font-weight: 700;
+	padding: 0.6rem 0;
+}
+
+.contact-text > p {
+	color: #e71a23;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	font-weight: 700;
+	padding: 0.6rem 0;
+	text-align: left;
+}
+
+section.banner {
+	background-image: url("../images/g.jpg");
+	/* height: 180vh; */
+	padding: 2rem 4rem;
+}
+
+.banner .banner-img {
+	background-image: url("../images/billionphotos1079319min.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	height: 30rem;
+}
+
+.banner .banner-text {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+}
+
+.banner-text > div {
+	align-self: flex-start;
+}
+
+.banner .banner-text .heading {
+	font-family: "Archivo Black", sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: start;
+	vertical-align: baseline;
+	color: #104e92;
+}
+
+div.banner-text-underline {
+	background-color: #e71a23;
+}
+
+.banner-text > div > p {
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.8rem;
+	font-size: 1.1rem;
+	color: #111111;
+	text-align: left;
+}
+
+section.repair-services {
+	padding: 4rem;
+}
+
+.repair-service .service-text-heading {
+	font-size: 1.2rem;
+}
+
+.service-text-description {
+	font-size: 1.1rem;
+	font-weight: 300;
+	font-style: italic;
+	padding-top: 1rem;
+}
+
+section.about {
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+	background-color: #104e92;
+}
+
+section.mission-info {
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	gap: 3rem;
+	align-items: center;
+}
+
+.mission-info .mission-text {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+button.contact-action {
+	padding: 1rem 2.6rem;
+	text-transform: uppercase;
+
+	border: 1px solid #000000;
+	color: #333333;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 0.75rem;
+	line-height: 1.2rem;
+	vertical-align: middle;
+	letter-spacing: 1px;
+}
+
+#footer-content {
 	z-index: 1;
-	position: absolute;
-	bottom: 40px;
+	background: #333333;
+	display: flex;
+	height: 40vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 4rem;
 }
