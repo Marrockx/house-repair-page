@@ -97,7 +97,14 @@ main > section.services {
 	text-align: center;
 	row-gap: 2rem;
 	background-color: #f2f2f2;
-	padding: 4rem;
+}
+
+section.services,
+section.contact,
+section.banner,
+section.repair-services,
+section.about {
+	padding: 4rem 6.9rem;
 }
 
 .services div > h3 {
@@ -106,10 +113,12 @@ main > section.services {
 	text-transform: uppercase;
 	color: #999999;
 	font-weight: 400;
+	letter-spacing: 2px;
 }
 
-.services div > h1 {
-	font-family: "Roboto", sans-serif;
+.services div > h1,
+.repair-services div h2 {
+	font-family: sans-serif;
 	font-size: 3.2rem;
 	line-height: 3.5rem;
 	font-weight: 700;
@@ -117,12 +126,15 @@ main > section.services {
 	text-transform: capitalize;
 	color: hsl(0, 0%, 7%);
 	min-width: 24rem;
+	padding: 0 4rem;
+	text-align: center;
 }
 
 .services div > p {
 	font-family: "Open Sans", sans-serif;
-	font-size: 1.4rem;
-	line-height: 2rem;
+	font-size: 1.3rem;
+	line-height: 2.1rem;
+
 	color: #111111;
 	font-weight: 300;
 }
@@ -133,12 +145,13 @@ button.services-booking-action {
 	background-color: #d1161e;
 	border: none;
 	color: #ffffff;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 600;
+	font-family: sans-serif;
+	font-weight: 700;
 	font-size: 0.75rem;
 	line-height: 1.2rem;
 	vertical-align: middle;
 	letter-spacing: 1px;
+	border-radius: 2px;
 }
 
 .services-booking-action:hover {
@@ -146,7 +159,6 @@ button.services-booking-action {
 }
 
 section.contact {
-	padding: 4rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -161,8 +173,8 @@ section.contact > div {
 
 section.contact > div > div.service-img {
 	background-size: 32rem;
-	background-position: 48% 50%;
-	height: 22rem;
+	background-position: 54.4% 50%;
+	height: 21.5rem;
 }
 
 .service-img.img-1 {
@@ -174,9 +186,9 @@ section.contact > div > div.service-img {
 }
 
 .contact > div > p {
-	padding: 2rem 0;
+	padding: 2rem 0.2rem;
 	color: #111111;
-	font-family: "Open Sans", sans-serif;
+	font-family: sans-serif;
 	font-size: 1rem;
 	line-height: 1.6rem;
 	font-weight: 400;
@@ -190,7 +202,7 @@ section.contact > div > div.service-img {
 .contact-text > h4 {
 	color: #111111;
 
-	font-family: "Roboto", sans-serif;
+	font-family: sans-serif;
 	font-size: 1.9rem;
 	line-height: 2.1rem;
 	font-weight: 700;
@@ -199,7 +211,7 @@ section.contact > div > div.service-img {
 
 .contact-text > p {
 	color: #e71a23;
-	font-family: "Roboto", sans-serif;
+	font-family: sans-serif;
 	font-size: 1.5rem;
 	line-height: 1.8rem;
 	font-weight: 700;
@@ -210,18 +222,19 @@ section.contact > div > div.service-img {
 section.banner {
 	background-image: url("../images/g.jpg");
 	/* height: 180vh; */
-	padding: 2rem 4rem;
+	padding: 2rem 6.9rem;
 }
 
 .banner .banner-img {
 	background-image: url("../images/billionphotos1079319min.png");
 	background-position: top center;
 	background-repeat: no-repeat;
-	background-size: 90%;
-	height: 30rem;
+	background-size: 100%;
+	height: 26.7rem;
 }
 
 .banner .banner-text {
+	margin-top: 10rem;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
@@ -233,13 +246,15 @@ section.banner {
 }
 
 .banner .banner-text .heading {
-	font-family: "Archivo Black", sans-serif;
-	font-size: 3rem;
+	font-family: "Roboto", sans-serif;
+	font-size: 3.4rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: start;
 	vertical-align: baseline;
 	color: #104e92;
+	margin-right: 4rem;
+	line-height: 3.6rem;
 }
 
 div.banner-text-underline {
@@ -255,28 +270,92 @@ div.banner-text-underline {
 }
 
 section.repair-services {
-	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.repair-services .repair-services-heading {
+	align-self: flex-start;
+}
+div.repair-services-heading h2 {
+	padding-bottom: 2rem;
+	padding-left: 0;
+}
+
+.repair-service {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.repair-service > img {
+	height: 85px;
+	width: 85px;
 }
 
 .repair-service .service-text-heading {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	color: #111111;
 }
 
 .service-text-description {
 	font-size: 1.1rem;
-	font-weight: 300;
+	font-weight: 400;
 	font-style: italic;
-	padding-top: 1rem;
+	line-height: 1.6rem;
+	padding-top: 2rem;
+	font-family: sans-serif;
 }
 
 section.about {
-	padding: 4rem;
 	display: flex;
 	flex-direction: column;
-	align-content: center;
-	font-size: 2rem;
-	text-transform: uppercase;
+	justify-content: center;
 	background-color: #104e92;
+	color: #ffffff;
+	gap: 2rem;
+}
+
+.about div > h5 {
+	font-size: 1.1rem;
+	font-weight: 400;
+	font-family: sans-serif;
+	text-transform: uppercase;
+
+	letter-spacing: 2px;
+}
+
+.about div > h4 {
+	font-size: 3.7rem;
+	font-weight: 400;
+	font-family: sans-serif;
+	line-height: 3.6rem;
+}
+
+.about div > h4 > span {
+	font-weight: 4.1rem;
+	font-weight: 700;
+}
+
+section.about > div.about-image {
+	background-size: 26.6rem;
+	background-position: 50% 50%;
+	height: 17.7rem;
+}
+
+.about-image.img-1 {
+	background-image: url("../images/frg.jpg");
+}
+
+.about-image.img-2 {
+	background-image: url("../images/rg.jpg");
+}
+.about-image.img-3 {
+	background-image: url("../images/billionphotos1882993.jpg");
+}
+.about-image.img-4 {
+	background-image: url("../images/billionphotos1882951.jpg");
 }
 
 section.mission-info {
